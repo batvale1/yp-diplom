@@ -4,4 +4,14 @@
 .header_theme_dark {
     background-image: url('../../images/header-theme-dark-background.jpg');
     background-size: cover;
+    background-position: center;
+}
+
+.empty-search__emotion {
+    background-image: url('../../images/empty-emotion.svg');
+    background-size: cover;
+    background-position: center;
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
 }
