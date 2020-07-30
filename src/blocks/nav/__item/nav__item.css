@@ -1,0 +1,16 @@
+.nav__item {
+    margin-right: 34px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav__item:last-of-type {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .nav__item {
+        margin-right: 11px;
+    }
+}

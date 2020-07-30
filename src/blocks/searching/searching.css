@@ -1,0 +1,17 @@
+@import "./__preloader/searching__preloader.css";
+@import "./__heading/searching__heading.css";
+@import "./__process-caption/searching__process-caption.css";
+@import "./__text/searching__text.css";
+@import "./_hidden/searching_hidden.css";
+
+.searching {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 86px 0 80px 0;
+    background: #F5F6F7;
+}
+
+@media screen and (max-width: 500px) {
+    .searching {
+        padding: 40px 0;
+    }
+}

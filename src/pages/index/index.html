@@ -15,7 +15,7 @@
   <script src="<%= htmlWebpackPlugin.files.js %>" defer></script>
 </head>
 <body class="body">
- <!-- <header class="header header_theme_dark">
+ <header class="header header_theme_dark">
     <div class="header__main">
       <div class="header__container container">
         <a href="#" alt="logo" class="header__logo logo">NewsAnalyzer</a>
@@ -54,7 +54,7 @@
     </section>
     <section class="results">
       <div class="container">
-        <div class="results__he ader">
+        <div class="results__header">
           <h2 class="results__heading">Результаты поиска</h2>
           <a href="/analytics" class="results__link link">Посмотреть аналитику</a>
         </div>
@@ -132,7 +132,10 @@
       </div>
     </section>
     <section class="about container">
-      <img src="<%=require('../../images/author.jpg')%>" alt="" class="about__image">
+      <picture class="about__image">
+        <source media="(max-width:768px)" srcset="<%=require('../../images/author-mobile.jpg')%>">
+        <img src="<%=require('../../images/author.jpg')%>" alt="автор" class="author__image-content">
+      </picture>
       <div class="about__content">
         <h2 class="about__author title">Об авторе</h2>
         <p class="about__text paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
@@ -145,13 +148,13 @@
     <nav class="footer__nav nav">
       <ul class="nav__menu nav__menu_vertical">
         <li class="nav__item nav__item_vertical">
-          <p class="nav__link">Главная</p>
+          <p class="nav__link nav__link_theme_default">Главная</p>
         </li>
         <li class="nav__item nav__item_vertical">
-          <a href="/about" class="nav__link">О проекте</a>
+          <a href="/about" class="nav__link nav__link_theme_default">О проекте</a>
         </li>
         <li class="nav__item nav__item_vertical">
-          <a href="https://praktikum.yandex.ru/" class="nav__link">Яндекс.Практикум</a>
+          <a href="https://praktikum.yandex.ru/" class="nav__link nav__link_theme_default">Яндекс.Практикум</a>
         </li>
       </ul>
     </nav>
@@ -170,7 +173,7 @@
 
 
 
-  <header class="header">
+  <!--<header class="header">
     <div class="header__main header__main_theme_light">
       <div class="header__container container">
         <a href="#" alt="logo" class="header__logo logo logo_theme_light">NewsAnalyzer</a>
@@ -235,995 +238,87 @@
         <p class="about__text paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
         <p class="about__text paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
       </div>
-    </section>
-    <section class="github">
+    </section>-->
+    <!--<section class="github">
       <div class="github__header container">
         <h2 class="github__heading title">История коммитов из GitHub</h2>
         <a href="#" class="github__link link">Открыть в  Github</a>
-        <div class="github-container">
-          <div class="github__card">
-            <p class="github__card-date">14 августа, 2019</p>
-            <div class="github__card-author">
-              <img src="<%=require('../../images/github-person.jpg')%>" alt="" class="github__card-author-image">
-              <div class="github__card__author-contacts">
-                <p class="github__author-name">Антон Дмитриев</p>
-                <p class="github__author-email">anton@yandex.ru</p>
-              </div>
+      </div>
+      <div class="github-container">
+        <div class="github__card">
+          <p class="github__card-date">14 августа, 2019</p>
+          <div class="github__card-author">
+            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+            <div class="github__card__author-contacts">
+              <p class="github__author-name">Антон Дмитриев</p>
+              <p class="github__author-email">anton@yandex.ru</p>
             </div>
-            <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
-              developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
           </div>
+          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+        <div class="github__card">
+          <p class="github__card-date">14 августа, 2019</p>
+          <div class="github__card-author">
+            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+            <div class="github__card__author-contacts">
+              <p class="github__author-name">Антон Дмитриев</p>
+              <p class="github__author-email">anton@yandex.ru</p>
+            </div>
+          </div>
+          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+        <div class="github__card">
+          <p class="github__card-date">14 августа, 2019</p>
+          <div class="github__card-author">
+            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+            <div class="github__card__author-contacts">
+              <p class="github__author-name">Антон Дмитриев</p>
+              <p class="github__author-email">anton@yandex.ru</p>
+            </div>
+          </div>
+          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+        <div class="github__card">
+          <p class="github__card-date">14 августа, 2019</p>
+          <div class="github__card-author">
+            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+            <div class="github__card__author-contacts">
+              <p class="github__author-name">Антон Дмитриев</p>
+              <p class="github__author-email">anton@yandex.ru</p>
+            </div>
+          </div>
+          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+        <div class="github__card">
+          <p class="github__card-date">14 августа, 2019</p>
+          <div class="github__card-author">
+            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+            <div class="github__card__author-contacts">
+              <p class="github__author-name">Антон Дмитриев</p>
+              <p class="github__author-email">anton@yandex.ru</p>
+            </div>
+          </div>
+          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+        </div>
+        <div class="github__card">
+          <p class="github__card-date">14 августа, 2019</p>
+          <div class="github__card-author">
+            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+            <div class="github__card__author-contacts">
+              <p class="github__author-name">Антон Дмитриев</p>
+              <p class="github__author-email">anton@yandex.ru</p>
+            </div>
+          </div>
+          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer container">
-    <p class="footer__copyright">&copy; 2020 Supersite</p>
-    <nav class="footer__nav nav">
-      <ul class="nav__menu nav__menu_vertical">
-        <li class="nav__item nav__item_vertical">
-          <p class="nav__link">Главная</p>
-        </li>
-        <li class="nav__item nav__item_vertical">
-          <a href="/about" class="nav__link">О проекте</a>
-        </li>
-        <li class="nav__item nav__item_vertical">
-          <a href="https://praktikum.yandex.ru/" class="nav__link">Яндекс.Практикум</a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="footer__social social">
-      <ul class="social__menu">
-        <li class="social__item">
-          <a href="/" class="social__link"><img src="<%=require('../../images/github-icon.svg')%>" alt="github" class="social-icon"></a>
-        </li>
-        <li class="social__item">
-          <a href="/about" class="social__link"><img src="<%=require('../../images/fb-icon.svg')%>" alt="facebook" class="social-icon"></a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
+    </section>-->
 </body>
 
-<style>
-  .tech {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background: #F5F6F7;
-  }
-
-  .tech__heading {
-    max-width: 344px;
-    margin: 0 0 40px 0;
-  }
-
-  .tech__content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .tech__list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-
-  .tech__item {
-    margin-right: 40px;
-  }
-
-  .tech__item:last-of-type {
-    margin-right: 0;
-  }
-
-  .tech__item-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tech__item-name {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    color: #1A1B22;
-    margin: 0;
-  }
-
-  .tech__item-logo {
-    margin-top: 10px;
-  }
-
-  .about-app {
-    padding-top: 80px;
-    padding-bottom: 94px;
-  }
-
-  .about-app__heading {
-    margin: 0;
-  }
-
-  .about-app__text {
-    max-width: 760px;
-    margin: 24px 0 0 0;
-  }
-
-  .logo {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-
-  .logo_theme_light {
-    color: #1A1B22;
-  }
-
-  .searching__preloader {
-    display: block;
-    width: 74px;
-    height: 74px;
-    border: 4px solid #444;
-    border-bottom-color: #888;
-
-    border-radius: 50%;
-
-    margin: auto;
-
-    animation: spin .75s infinite linear;
-  }
-
-  .searching__process-caption{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: #B6BCBF;
-    margin-top: 24px;
-  }
-
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .searching {
-    padding: 86px 0 80px 0;
-    background: #F5F6F7;
-  }
-
-  .searching__heading {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 30px;
-    text-align: center;
-    color: #1A1B22;
-  }
-
-  .searching__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: #B6BCBF;
-    max-width: 290px;
-    margin: 0 auto;
-  }
-
-  .searching_hidden {
-    display: none;
-  }
-
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 30px 0;
-  }
-
-  .footer__copyright {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #B6BCBF;
-    margin: 0 15px 0 0;
-  }
-
-  .social__menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-
-  .social__item {
-    margin-right: 28px;
-  }
-
-  .social__item:last-of-type {
-    margin-right: 0;
-  }
-
-  .social__link:hover {
-    opacity: .7;
-  }
-
-  .about {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .about__image {
-    width: 464px;
-    height: 464px;
-    border-radius: 50%;
-    margin-right: 56px;
-  }
-
-  .about__content {
-    margin-top: 40px;
-  }
-
-  .about__author {
-
-  }
-
-  .title {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 46px;
-    color: #1A1B22;
-  }
-
-  .about__text {
-    margin-top: 24px;
-    max-width: 500px;
-  }
-
-  .paragraph {
-    font-family: Roboto, Arial, Helvetica, sans-serif;;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    color: #1A1B22;
-  }
-
-  .results {
-    padding: 80px 0;
-    background: #F5F6F7;
-  }
-
-  .results__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .results__heading {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    line-height: 46px;
-    color: #1A1B22;
-    margin: 0;
-  }
-
-  .results__more-btn {
-    max-width: 288px;
-    margin: 0 auto 0;
-    display: block;
-  }
-
-  .results__link {
-
-  }
-
-  .link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #1A1B22;
-    text-decoration: none;
-    transition: opacity .2s linear;
-  }
-
-  .link:hover {
-    opacity: .7;
-  }
-
-  .link:after {
-    content: '';
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 4px;
-    transform: rotate(-45deg);
-    margin-left: 5px;
-  }
-
-  .results__cards {
-    padding: 64px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
-    margin: 0;
-  }
-
-  .card {
-    border-radius: 20px;
-    background: #FFFFFF;
-    overflow: hidden;
-    display: grid;
-    grid-template-rows: 272px 1fr;
-    transition: opacity .2s linear;
-  }
-
-  .card:hover {
-    opacity: .8;
-  }
-
-  .card__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card__container {
-    padding: 20px 24px 20px 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .card__caption {
-    margin: 0;
-    font-size: 18px;
-    line-height: 24px;
-    color: #B6BCBF;
-  }
-
-  .card__heading {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    margin: 12px 0 0 0;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 30px;
-    color: #1A1B22;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-    word-wrap: break-word;
-  }
-
-  .card__text {
-    margin: 16px 0 0 0;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1A1B22;
-    display: -webkit-box;
-    -webkit-line-clamp: 5 ;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-    word-wrap: break-word;
-  }
-
-  .card__source {
-    display: inline-block;
-    margin-top: 18px;
-    font-size: 16px;
-    line-height: 20px;
-    color: #B6BCBF;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-  }
-
-  .body {
-    min-height: 100vh;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  .container {
-    max-width: 1232px;
-    margin: 0 auto;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  .header__main {
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
-  }
-
-  .header__main_theme_light {
-    box-shadow: inset 0px -1px 0px #D1D2D6;
-  }
-
-  .header__container {
-    display: flex;
-    min-height: 80px;
-    justify-content: space-between;
-  }
-
-  .nav {
-    display: flex;
-  }
-
-  .nav__menu {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-  }
-
-  .nav__item {
-    margin-right: 34px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .nav__item_active-theme_dark {
-    border-bottom: 3px solid #FFFFFF;
-  }
-
-  .nav__item_active-theme_light {
-    border-bottom: 3px solid #1A1B22;
-  }
-
-  .nav__item:last-of-type {
-    margin-right: 0;
-  }
-
-  .nav__link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #B6BCBF;
-    transition: color .2s linear;
-    margin: 0;
-  }
-
-  .nav__link:hover {
-    color: #FFFFFF;
-  }
-
-  .nav__link_theme_light {
-    color: #B6BCBF;
-  }
-
-  .nav__link_theme_light:hover {
-    color: #1A1B22;
-  }
-
-  .nav__link_active_light {
-    color: #1A1B22;
-  }
-
-  .nav__link_active-theme_dark {
-    color: #FFFFFF;
-  }
-
-  .nav__link_active-theme_dark:hover {
-    color: #FFFFFF;
-  }
-
-
-  .header__cover {
-    max-width: 608px;
-    min-height: 496px;
-    padding: 80px 0;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
-
-  .header__logo {
-    align-self: center;
-  }
-
-  .cover {
-    max-width: 608px;
-    margin: 0 auto;
-  }
-
-  .cover__heading {
-    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    line-height: 64px;
-    color: #FFFFFF;
-    max-width: 300px;
-    margin: 0;
-  }
-
-  .cover__text {
-    font-weight: normal;
-    margin: 32px 0 0 0;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-    max-width: 515px;
-  }
-
-  .header__search {
-    margin-top: 64px;
-  }
-
-  .search {
-    position: relative;
-    max-width: 608px;
-  }
-
-  .search__input {
-    width: 100%;
-    border: 1px solid #D1D2D6;
-    box-sizing: border-box;
-    backdrop-filter: blur(8px);
-    border-radius: 100px;
-    padding: 0 208px 0 24px;
-    font-size: 16px;
-    line-height: 62px;
-    color: #1A1B22;
-    caret-color: #2F71E5;
-    box-sizing: border-box;
-  }
-
-  .search__input::placeholder {
-    color: #B6BCBF;
-  }
-
-  .search__input:focus {
-    outline: none;
-  }
-
-  .search__btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .button {
-    background: #2F71E5;
-    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
-    border-radius: 100px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 64px;
-    padding: 0 54px;
-    color: #FFFFFF;
-    border: none;
-    outline: none;
-    transition: background-color .2s linear;
-    cursor: pointer;
-  }
-
-  .button:hover {
-    background: #347EFF;
-  }
-
-  .button:active {
-    background: #2A65CC;
-  }
-
-  .button_theme_light {
-    background: #FFFFFF;
-    border-radius: 80px;
-    color: #1A1B22;
-    padding-right: 84px;
-    padding-left: 84px;
-  }
-
-  .button_theme_light:hover {
-    background: #FFFFFF;
-    opacity: 0.9;
-  }
-
-  .button_theme_light:active {
-    background: #FFFFFF;
-    opacity: 0.9;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .header__container {
-      min-height: 64px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .cover__heading {
-      font-size: 36px;
-      line-height: 40px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .cover__text {
-      font-size: 18px;
-      line-height: 24px;
-      margin-top: 16px;
-      max-width: 430px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .header__cover {
-      padding: 40px 0 48px 0;
-      min-height: 336px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .header__search {
-      margin-top: 24px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .button {
-      line-height: 56px;
-      padding: 0 50px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .search__input {
-      line-height: 54px;
-      padding: 0 194px 0 24px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .cover {
-      max-width: 448px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .link {
-      font-size: 18px;
-      line-height: 24px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .card__heading {
-      font-size: 22px;
-      line-height: 24px;
-      margin-top: 12px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .card__text {
-      font-size: 16px;
-      line-height: 22px;
-      margin-top: 10px;
-      max-height: 88px;
-      overflow: hidden;
-      -webkit-line-clamp: 4;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .card__source {
-      font-size: 16px;
-      line-height: 20px;
-      margin-top: 12px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .card__container {
-      padding: 16px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .card {
-      grid-template-rows: 150px 1fr;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .results__cards {
-      grid-gap: 8px;
-      padding: 32px 0 22px 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .results {
-      padding: 40px 0;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .about__image {
-      width: 232px;
-      height: 232px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .about {
-      align-items: center;
-      padding-top: 40px;
-      padding-bottom: 48px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .about__author {
-      margin-top: 0;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .title {
-      font-size: 30px;
-      line-height: 40px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .logo {
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .paragraph {
-      font-size: 18px;
-      line-height: 24px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .about__content {
-      margin-top: 0;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .about__image {
-      width: 232px;
-      height: 232px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .tech__content {
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 700px) {
-    .footer {
-      flex-wrap: wrap;
-      align-items: flex-start;
-    }
-
-    .footer__copyright {
-      order: 3;
-      width: 100%;
-      margin-top: 40px;
-    }
-
-    .nav__menu_vertical {
-      display: block;
-    }
-
-    .nav__item_vertical {
-      margin-top: 30px;
-    }
-
-    .nav__item_vertical:first-of-type {
-      margin-top: 0;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .about-app {
-      padding-top: 30px;
-      padding-bottom: 60px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .about-app__text {
-      margin: 16px 0 0 0;
-    }
-  }
-
-
-  @media screen and (max-width: 700px) {
-    .results__cards {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card {
-      grid-template-rows: 196px 1fr;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .container {
-      padding-left: 14px;
-      padding-right: 14px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .header__container {
-      min-height: 56px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .nav__link {
-      font-size: 16px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .header__cover {
-      padding: 30px 0 64px 0;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .search__btn {
-      position: inherit;
-      width: 100%;
-      margin-top: 16px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .searching {
-      padding: 40px 0;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .results__heading {
-      font-size: 30px;
-      line-height: 34px;
-      max-width: 230px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .results__header {
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .results__link {
-      margin-top: 16px;
-      display: inline-block;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .results__cards {
-      grid-template-columns: 1fr;
-      grid-gap: 8px;
-      padding: 36px 0 12px 0;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .card__heading {
-      line-height: 28px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .results__more-btn {
-      width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .results {
-      padding: 32px 0 44px 0;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .about {
-      padding-top: 32px;
-      padding-bottom: 32px;
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .about__image {
-      margin: 0 auto;
-      font-size: 30px;
-      line-height: 40px;
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .about__author {
-      margin: 24px 0 0 0;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .about__text {
-      margin: 0;
-    }
-
-    .about__text:first-of-type {
-      margin: 16px 0 0 0;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .nav__item {
-      margin-right: 11px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .logo {
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .about__image {
-      width: 272px;
-      height: 272px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .about-app {
-      padding-top: 16px;
-      padding-bottom: 50px;
-    }
-  }
-
-</style>
 </html>

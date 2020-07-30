@@ -1,0 +1,10 @@
+.results__link {
+    display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+    .results__link {
+        margin-top: 16px;
+        display: inline-block;
+    }
+}

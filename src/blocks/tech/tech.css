@@ -1,0 +1,14 @@
+@import "./__heading/tech__heading.css";
+@import "./__content/tech__content.css";
+@import "./__list/tech__list.css";
+@import "./__item/tech__item.css";
+@import "./__item-container/tech__item-container.css";
+@import "./__item-name/tech__item-name.css";
+@import "./__item-logo/tech__item-logo.css";
+
+.tech {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #F5F6F7;
+}

@@ -1,0 +1,10 @@
+.swiper .swiper__pagination {
+    position: absolute;
+    text-align: center;
+    transition: opacity .3s;
+    transform: translateZ(0);
+    z-index: 10;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+}

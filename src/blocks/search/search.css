@@ -1,0 +1,7 @@
+@import "./__btn/search__btn.css";
+@import "./__input/search__input.css";
+
+.search {
+    position: relative;
+    max-width: 608px;
+}

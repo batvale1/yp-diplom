@@ -1,0 +1,10 @@
+.about-app__text {
+    max-width: 760px;
+    margin: 24px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about-app__text {
+        margin: 16px 0 0 0;
+    }
+}

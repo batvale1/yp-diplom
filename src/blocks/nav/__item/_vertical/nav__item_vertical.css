@@ -1,0 +1,13 @@
+.nav__item_vertical {
+
+}
+
+@media screen and (max-width: 700px) {
+    .nav__item_vertical {
+        margin-top: 30px;
+    }
+
+    .nav__item_vertical:first-of-type {
+        margin-top: 0;
+    }
+}

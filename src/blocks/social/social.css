@@ -1,0 +1,7 @@
+@import "./__menu/social__menu.css";
+@import "./__item/social__item.css";
+@import "./__link/social__link.css";
+
+.social {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}

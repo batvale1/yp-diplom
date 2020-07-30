@@ -1,0 +1,17 @@
+.header__container {
+    display: flex;
+    min-height: 80px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        min-height: 64px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__container {
+        min-height: 56px;
+    }
+}

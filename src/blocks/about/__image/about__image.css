@@ -1,0 +1,24 @@
+.about__image {
+    width: 464px;
+    height: 464px;
+    border-radius: 50%;
+    margin-right: 56px;
+}
+
+@media screen and (max-width: 768px) {
+    .about__image {
+        width: 232px;
+        height: 232px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about__image {
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 40px;
+        display: block;
+        width: 272px;
+        height: 272px;
+    }
+}

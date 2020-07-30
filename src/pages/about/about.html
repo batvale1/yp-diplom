@@ -14,7 +14,164 @@
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
     <script src="<%= htmlWebpackPlugin.files.js %>" defer></script>
 </head>
-<body>
-<h1>about</h1>
+<body class="body">
+<header class="header">
+    <div class="header__main header__main_theme_light">
+        <div class="header__container container">
+            <a href="#" alt="logo" class="header__logo logo logo_theme_light">NewsAnalyzer</a>
+            <nav class="header__nav nav nav_theme_dark">
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a class="nav__link nav__link_theme_light">Главная</a>
+                    </li>
+                    <li class="nav__item nav__item_active-theme_light">
+                        <a href="/about" class="nav__link nav__link_theme_light nav__link_active_light">О проекте</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="about-app container">
+        <h1 class="about-app__heading title">Клиентам</h1>
+        <p class="about-app__text paragraph">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+        <p class="about-app__text paragraph">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+        <p class="about-app__text paragraph">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+        <p class="about-app__text paragraph">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
+        <p class="about-app__text paragraph">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+    </section>
+    <section class="tech">
+        <div class="tech__content container">
+            <h2 class="tech__heading title">Используемые технологии</h2>
+            <ul class="tech__list">
+                <li class="tech__item">
+                    <div class="tech__item-container">
+                        <p class="tech__item-name">HTML</p>
+                        <img src="<%=require('../../images/html.svg')%>" alt="" class="tech__item-logo">
+                    </div>
+                </li>
+                <li class="tech__item">
+                    <div class="tech__item-container">
+                        <p class="tech__item-name">CSS</p>
+                        <img src="<%=require('../../images/css.svg')%>" alt="" class="tech__item-logo">
+                    </div>
+                </li>
+                <li class="tech__item">
+                    <div class="tech__item-container">
+                        <p class="tech__item-name">Java Script</p>
+                        <img src="<%=require('../../images/js.svg')%>" alt="" class="tech__item-logo">
+                    </div>
+                </li>
+                <li class="tech__item">
+                    <div class="tech__item-container">
+                        <p class="tech__item-name">Webpack</p>
+                        <img src="<%=require('../../images/webpack.svg')%>" alt="" class="tech__item-logo">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about container">
+        <img src="<%=require('../../images/author.jpg')%>" alt="" class="about__image">
+        <div class="about__content">
+            <h2 class="about__author title">Об авторе</h2>
+            <p class="about__text paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+            <p class="about__text paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        </div>
+    </section>
+    <section class="github">
+        <div class="github__header container">
+            <h2 class="github__heading title">История коммитов из GitHub</h2>
+            <a href="#" class="github__link link">Открыть в  Github</a>
+        </div>
+        <div class="github__container swiper">
+            <div class="swiper__container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide github__card">
+                        <p class="github__card-date">14 августа, 2019</p>
+                        <div class="github__card-author">
+                            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+                            <div class="github__card__author-contacts">
+                                <p class="github__author-name">Антон Дмитриев</p>
+                                <p class="github__author-email">anton@yandex.ru</p>
+                            </div>
+                        </div>
+                        <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+                            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div>
+                    <div class="swiper-slide github__card">
+                        <p class="github__card-date">14 августа, 2019</p>
+                        <div class="github__card-author">
+                            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+                            <div class="github__card__author-contacts">
+                                <p class="github__author-name">Антон Дмитриев</p>
+                                <p class="github__author-email">anton@yandex.ru</p>
+                            </div>
+                        </div>
+                        <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+                            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div>
+
+                    <div class="swiper-slide github__card">
+                        <p class="github__card-date">14 августа, 2019</p>
+                        <div class="github__card-author">
+                            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+                            <div class="github__card__author-contacts">
+                                <p class="github__author-name">Антон Дмитриев</p>
+                                <p class="github__author-email">anton@yandex.ru</p>
+                            </div>
+                        </div>
+                        <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+                            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div>
+
+                    <div class="swiper-slide github__card">
+                        <p class="github__card-date">14 августа, 2019</p>
+                        <div class="github__card-author">
+                            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="" class="github__card-author-image">
+                            <div class="github__card__author-contacts">
+                                <p class="github__author-name">Антон Дмитриев</p>
+                                <p class="github__author-email">anton@yandex.ru</p>
+                            </div>
+                        </div>
+                        <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+                            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div>
+
+                </div>
+                <div class="swiper__pagination"></div>
+            </div>
+            <div class="swiper__button-next"></div>
+            <div class="swiper__button-prev"></div>
+        </div>
+    </section>
+</main>
+<footer class="footer container">
+    <p class="footer__copyright">&copy; 2020 Supersite</p>
+    <nav class="footer__nav nav">
+        <ul class="nav__menu nav__menu_vertical">
+            <li class="nav__item nav__item_vertical">
+                <p class="nav__link nav__link_theme_default">Главная</p>
+            </li>
+            <li class="nav__item nav__item_vertical">
+                <a href="/about" class="nav__link nav__link_theme_default">О проекте</a>
+            </li>
+            <li class="nav__item nav__item_vertical">
+                <a href="https://praktikum.yandex.ru/" class="nav__link nav__link_theme_default">Яндекс.Практикум</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="footer__social social">
+        <ul class="social__menu">
+            <li class="social__item">
+                <a href="/" class="social__link"><img src="<%=require('../../images/github-icon.svg')%>" alt="github" class="social-icon"></a>
+            </li>
+            <li class="social__item">
+                <a href="/about" class="social__link"><img src="<%=require('../../images/fb-icon.svg')%>" alt="facebook" class="social-icon"></a>
+            </li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>

@@ -1,0 +1,22 @@
+@import "./__heading/about-app__heading.css";
+@import "./__text/about-app__text.css";
+
+.about-app {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+    padding-bottom: 94px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-app {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-app {
+        padding-top: 16px;
+        padding-bottom: 50px;
+    }
+}

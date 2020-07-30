@@ -1,0 +1,13 @@
+@import "./__text/cover__text.css";
+@import "./__heading/cover__heading.css";
+
+.cover {
+    max-width: 608px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .cover {
+        max-width: 448px;
+    }
+}

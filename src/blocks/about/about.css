@@ -1,0 +1,28 @@
+@import "./__image/about__image.css";
+@import "./__content/about__content.css";
+@import "./__author/about__author.css";
+@import "./__text/about__text.css";
+
+.about {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: block;
+    }
+}

@@ -1,0 +1,33 @@
+@import "./__content/card__content.css";
+@import "./__container/card__container.css";
+@import "./__img/card__img.css";
+@import "./__caption/card__caption.css";
+@import "./__heading/card__heading.css";
+@import "./__text/card__text.css";
+@import "./__source/card__source.css";
+
+.card {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    background: #FFFFFF;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 272px 1fr;
+    transition: opacity .2s linear;
+}
+
+.card:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        grid-template-rows: 150px 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        grid-template-rows: 196px 1fr;
+    }
+}

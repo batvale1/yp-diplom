@@ -1,0 +1,9 @@
+.header__search {
+    margin-top: 64px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__search {
+        margin-top: 24px;
+    }
+}

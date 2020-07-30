@@ -1,0 +1,14 @@
+.github__card {
+    width: 400px;
+    height: 288px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-right: 16px;
+    flex: none;
+}
+
+.github__card:last-of-type {
+    margin-right: 0;
+}
