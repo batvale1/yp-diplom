@@ -15,14 +15,14 @@
   <script src="<%= htmlWebpackPlugin.files.js %>" defer></script>
 </head>
 <body class="body">
-  <header class="header header_theme_dark">
+ <!-- <header class="header header_theme_dark">
     <div class="header__main">
       <div class="header__container container">
-        <img src="<%=require('../../images/logo-dark-theme.svg')%>" alt="" class="header__logo logo">
+        <a href="#" alt="logo" class="header__logo logo">NewsAnalyzer</a>
         <nav class="header__nav nav nav_theme_dark">
           <ul class="nav__menu">
-            <li class="nav__item nav__item_active">
-              <p class="nav__link nav__link_active">Главная</p>
+            <li class="nav__item nav__item_active-theme_dark">
+              <p class="nav__link nav__link_active-theme_dark">Главная</p>
             </li>
             <li class="nav__item">
               <a href="/about" class="nav__link">О проекте</a>
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="header__cover">
-      <div class="cover">
+      <div class="cover container">
         <h1 class="cover__heading">Что в мире творится</h1>
         <p class="cover__text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
         <div class="header__search search">
@@ -54,90 +54,78 @@
     </section>
     <section class="results">
       <div class="container">
-        <div class="results__header">
+        <div class="results__he ader">
           <h2 class="results__heading">Результаты поиска</h2>
-          <a href="/analytics" class="results__link">Посмотреть аналитику</a>
+          <a href="/analytics" class="results__link link">Посмотреть аналитику</a>
         </div>
         <ul class="results__cards">
           <li class="card">
-            <a href="#" class="card__link">
-              <img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img">
-              <div class="card__container">
-                <div class="card__content">
-                  <p class="card__caption">2 августа, 2019</p>
-                  <h3 class="card__heading">Национальное достояние – парки</h3>
-                  <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                </div>
-                <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            <a href="#"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+            <div class="card__container">
+              <div class="card__content">
+                <p class="card__caption">2 августа, 2019</p>
+                <h3 class="card__heading">Национальное достояние – парки</h3>
+                <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
               </div>
-            </a>
+              <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            </div>
           </li>
           <li class="card">
-            <a href="#" class="card__link">
-              <img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img">
-              <div class="card__container">
-                <div class="card__content">
-                  <p class="card__caption">2 августа, 2019</p>
-                  <h3 class="card__heading">Лесные огоньки: история одной фотографии</h3>
-                  <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                    из местных чудес природы.</p>
-                </div>
-                <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            <a href="#"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+            <div class="card__container">
+              <div class="card__content">
+                <p class="card__caption">2 августа, 2019</p>
+                <h3 class="card__heading">Лесные огоньки: история одной фотографии</h3>
+                <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+                  из местных чудес природы.</p>
               </div>
-            </a>
+              <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            </div>
           </li>
           <li class="card">
-            <a href="#" class="card__link">
-              <img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img">
-              <div class="card__container">
-                <div class="card__content">
-                  <p class="card__caption">2 августа, 2019</p>
-                  <h3 class="card__heading">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                  <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                </div>
-                <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            <a href="#"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+            <div class="card__container">
+              <div class="card__content">
+                <p class="card__caption">2 августа, 2019</p>
+                <h3 class="card__heading">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+                <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
               </div>
-            </a>
+              <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            </div>
           </li>
           <li class="card">
-            <a href="#" class="card__link">
-              <img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img">
-              <div class="card__container">
-                <div class="card__content">
-                  <p class="card__caption">2 августа, 2019</p>
-                  <h3 class="card__heading">Национальное достояние – парки</h3>
-                  <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-                </div>
-                <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            <a href="#"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+            <div class="card__container">
+              <div class="card__content">
+                <p class="card__caption">2 августа, 2019</p>
+                <h3 class="card__heading">Национальное достояние – парки</h3>
+                <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
               </div>
-            </a>
+              <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            </div>
           </li>
           <li class="card">
-            <a href="#" class="card__link">
-              <img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img">
-              <div class="card__container">
-                <div class="card__content">
-                  <p class="card__caption">2 августа, 2019</p>
-                  <h3 class="card__heading">Лесные огоньки: история одной фотографии</h3>
-                  <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
-                    из местных чудес природы.</p>
-                </div>
-                <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            <a href="#"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+            <div class="card__container">
+              <div class="card__content">
+                <p class="card__caption">2 августа, 2019</p>
+                <h3 class="card__heading">Лесные огоньки: история одной фотографии</h3>
+                <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+                  из местных чудес природы.</p>
               </div>
-            </a>
+              <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            </div>
           </li>
           <li class="card">
-            <a href="#" class="card__link">
-              <img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img">
-              <div class="card__container">
-                <div class="card__content">
-                  <p class="card__caption">2 августа, 2019</p>
-                  <h3 class="card__heading">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                  <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                </div>
-                <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            <a href="#"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+            <div class="card__container">
+              <div class="card__content">
+                <p class="card__caption">2 августа, 2019</p>
+                <h3 class="card__heading">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+                <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
               </div>
-            </a>
+              <a href="#" class="card__source" target="_blank">Лента.ру</a>
+            </div>
           </li>
         </ul>
         <button class="results__more-btn button button_theme_light">Показать еще</button>
@@ -146,28 +134,146 @@
     <section class="about container">
       <img src="<%=require('../../images/author.jpg')%>" alt="" class="about__image">
       <div class="about__content">
-        <h2 class="about__author">Об авторе</h2>
-        <p class="about__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-        <p class="about__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        <h2 class="about__author title">Об авторе</h2>
+        <p class="about__text paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+        <p class="about__text paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
       </div>
     </section>
   </main>
   <footer class="footer container">
     <p class="footer__copyright">&copy; 2020 Supersite</p>
     <nav class="footer__nav nav">
-      <ul class="nav__menu">
-        <li class="nav__item">
-          <p class="nav__link nav__link_theme_default">Главная</p>
+      <ul class="nav__menu nav__menu_vertical">
+        <li class="nav__item nav__item_vertical">
+          <p class="nav__link">Главная</p>
         </li>
-        <li class="nav__item">
-          <a href="/about" class="nav__link nav__link_theme_default">О проекте</a>
+        <li class="nav__item nav__item_vertical">
+          <a href="/about" class="nav__link">О проекте</a>
         </li>
-        <li class="nav__item">
-          <a href="https://praktikum.yandex.ru/" class="nav__link nav__link_theme_default">Яндекс.Практикум</a>
+        <li class="nav__item nav__item_vertical">
+          <a href="https://praktikum.yandex.ru/" class="nav__link">Яндекс.Практикум</a>
         </li>
       </ul>
     </nav>
-    <nav class="footer__nav social">
+    <nav class="footer__social social">
+      <ul class="social__menu">
+        <li class="social__item">
+          <a href="/" class="social__link"><img src="<%=require('../../images/github-icon.svg')%>" alt="github" class="social-icon"></a>
+        </li>
+        <li class="social__item">
+          <a href="/about" class="social__link"><img src="<%=require('../../images/fb-icon.svg')%>" alt="facebook" class="social-icon"></a>
+        </li>
+      </ul>
+    </nav>
+  </footer>-->
+
+
+
+
+  <header class="header">
+    <div class="header__main header__main_theme_light">
+      <div class="header__container container">
+        <a href="#" alt="logo" class="header__logo logo logo_theme_light">NewsAnalyzer</a>
+        <nav class="header__nav nav nav_theme_dark">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a class="nav__link nav__link_theme_light">Главная</a>
+            </li>
+            <li class="nav__item nav__item_active-theme_light">
+              <a href="/about" class="nav__link nav__link_theme_light nav__link_active_light">О проекте</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-app container">
+      <h1 class="about-app__heading title">Клиентам</h1>
+      <p class="about-app__text paragraph">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+      <p class="about-app__text paragraph">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+      <p class="about-app__text paragraph">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+      <p class="about-app__text paragraph">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
+      <p class="about-app__text paragraph">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+    </section>
+    <section class="tech">
+      <div class="tech__content container">
+        <h2 class="tech__heading title">Используемые технологии</h2>
+        <ul class="tech__list">
+          <li class="tech__item">
+            <div class="tech__item-container">
+              <p class="tech__item-name">HTML</p>
+              <img src="<%=require('../../images/html.svg')%>" alt="" class="tech__item-logo">
+            </div>
+          </li>
+          <li class="tech__item">
+            <div class="tech__item-container">
+              <p class="tech__item-name">CSS</p>
+              <img src="<%=require('../../images/css.svg')%>" alt="" class="tech__item-logo">
+            </div>
+          </li>
+          <li class="tech__item">
+            <div class="tech__item-container">
+              <p class="tech__item-name">Java Script</p>
+              <img src="<%=require('../../images/js.svg')%>" alt="" class="tech__item-logo">
+            </div>
+          </li>
+          <li class="tech__item">
+            <div class="tech__item-container">
+              <p class="tech__item-name">Webpack</p>
+              <img src="<%=require('../../images/webpack.svg')%>" alt="" class="tech__item-logo">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about container">
+      <img src="<%=require('../../images/author.jpg')%>" alt="" class="about__image">
+      <div class="about__content">
+        <h2 class="about__author title">Об авторе</h2>
+        <p class="about__text paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+        <p class="about__text paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+      </div>
+    </section>
+    <section class="github">
+      <div class="github__header container">
+        <h2 class="github__heading title">История коммитов из GitHub</h2>
+        <a href="#" class="github__link link">Открыть в  Github</a>
+        <div class="github-container">
+          <div class="github__card">
+            <p class="github__card-date">14 августа, 2019</p>
+            <div class="github__card-author">
+              <img src="<%=require('../../images/github-person.jpg')%>" alt="" class="github__card-author-image">
+              <div class="github__card__author-contacts">
+                <p class="github__author-name">Антон Дмитриев</p>
+                <p class="github__author-email">anton@yandex.ru</p>
+              </div>
+            </div>
+            <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
+              developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p class="footer__copyright">&copy; 2020 Supersite</p>
+    <nav class="footer__nav nav">
+      <ul class="nav__menu nav__menu_vertical">
+        <li class="nav__item nav__item_vertical">
+          <p class="nav__link">Главная</p>
+        </li>
+        <li class="nav__item nav__item_vertical">
+          <a href="/about" class="nav__link">О проекте</a>
+        </li>
+        <li class="nav__item nav__item_vertical">
+          <a href="https://praktikum.yandex.ru/" class="nav__link">Яндекс.Практикум</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer__social social">
       <ul class="social__menu">
         <li class="social__item">
           <a href="/" class="social__link"><img src="<%=require('../../images/github-icon.svg')%>" alt="github" class="social-icon"></a>
@@ -181,6 +287,84 @@
 </body>
 
 <style>
+  .tech {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #F5F6F7;
+  }
+
+  .tech__heading {
+    max-width: 344px;
+    margin: 0 0 40px 0;
+  }
+
+  .tech__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tech__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tech__item {
+    margin-right: 40px;
+  }
+
+  .tech__item:last-of-type {
+    margin-right: 0;
+  }
+
+  .tech__item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech__item-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    margin: 0;
+  }
+
+  .tech__item-logo {
+    margin-top: 10px;
+  }
+
+  .about-app {
+    padding-top: 80px;
+    padding-bottom: 94px;
+  }
+
+  .about-app__heading {
+    margin: 0;
+  }
+
+  .about-app__text {
+    max-width: 760px;
+    margin: 24px 0 0 0;
+  }
+
+  .logo {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .logo_theme_light {
+    color: #1A1B22;
+  }
 
   .searching__preloader {
     display: block;
@@ -218,6 +402,7 @@
   }
 
   .searching__heading {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
@@ -244,6 +429,7 @@
   .footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 30px 0;
   }
@@ -254,7 +440,7 @@
     font-size: 16px;
     line-height: 22px;
     color: #B6BCBF;
-    margin: 0;
+    margin: 0 15px 0 0;
   }
 
   .social__menu {
@@ -295,6 +481,11 @@
   }
 
   .about__author {
+
+  }
+
+  .title {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -305,6 +496,15 @@
   .about__text {
     margin-top: 24px;
     max-width: 500px;
+  }
+
+  .paragraph {
+    font-family: Roboto, Arial, Helvetica, sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
   }
 
   .results {
@@ -319,6 +519,7 @@
   }
 
   .results__heading {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     font-size: 40px;
     line-height: 46px;
     color: #1A1B22;
@@ -332,6 +533,10 @@
   }
 
   .results__link {
+
+  }
+
+  .link {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
@@ -340,11 +545,11 @@
     transition: opacity .2s linear;
   }
 
-  .results__link:hover {
+  .link:hover {
     opacity: .7;
   }
 
-  .results__link:after {
+  .link:after {
     content: '';
     border: solid black;
     border-width: 0 2px 2px 0;
@@ -403,11 +608,17 @@
   }
 
   .card__heading {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     margin: 12px 0 0 0;
     font-weight: normal;
     font-size: 26px;
     line-height: 30px;
     color: #1A1B22;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    word-wrap: break-word;
   }
 
   .card__text {
@@ -416,6 +627,11 @@
     font-size: 16px;
     line-height: 22px;
     color: #1A1B22;
+    display: -webkit-box;
+    -webkit-line-clamp: 5 ;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    word-wrap: break-word;
   }
 
   .card__source {
@@ -431,16 +647,9 @@
     text-transform: uppercase;
   }
 
-  .card__link {
-    text-decoration: none;
-  }
-
-
-
-
   .body {
     min-height: 100vh;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -454,6 +663,10 @@
 
   .header__main {
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .header__main_theme_light {
+    box-shadow: inset 0px -1px 0px #D1D2D6;
   }
 
   .header__container {
@@ -477,14 +690,15 @@
     margin-right: 34px;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
-  .nav__item_active {
-    color: #FFFFFF;
+  .nav__item_active-theme_dark {
+    border-bottom: 3px solid #FFFFFF;
   }
 
-  .nav__item_active {
-    border-bottom: 1px solid #FFFFFF;
+  .nav__item_active-theme_light {
+    border-bottom: 3px solid #1A1B22;
   }
 
   .nav__item:last-of-type {
@@ -505,17 +719,26 @@
     color: #FFFFFF;
   }
 
-  .nav__link_active {
-    color: #FFFFFF;
+  .nav__link_theme_light {
+    color: #B6BCBF;
   }
 
-  .nav__link_theme_default {
+  .nav__link_theme_light:hover {
     color: #1A1B22;
   }
 
-  .nav__link_theme_default:hover {
-    color: #B6BCBF;
+  .nav__link_active_light {
+    color: #1A1B22;
   }
+
+  .nav__link_active-theme_dark {
+    color: #FFFFFF;
+  }
+
+  .nav__link_active-theme_dark:hover {
+    color: #FFFFFF;
+  }
+
 
   .header__cover {
     max-width: 608px;
@@ -535,6 +758,7 @@
   }
 
   .cover__heading {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     font-size: 60px;
     line-height: 64px;
     color: #FFFFFF;
@@ -686,14 +910,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    .results__heading {
-      font-size: 30px;
-      line-height: 34px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .results__link {
+    .link {
       font-size: 18px;
       line-height: 24px;
     }
@@ -714,6 +931,7 @@
       margin-top: 10px;
       max-height: 88px;
       overflow: hidden;
+      -webkit-line-clamp: 4;
     }
   }
 
@@ -769,13 +987,25 @@
   @media screen and (max-width: 768px) {
     .about__author {
       margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .title {
       font-size: 30px;
       line-height: 40px;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .about__text {
+    .logo {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .paragraph {
       font-size: 18px;
       line-height: 24px;
     }
@@ -787,6 +1017,213 @@
     }
   }
 
+  @media screen and (max-width: 768px) {
+    .about__image {
+      width: 232px;
+      height: 232px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .tech__content {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .footer {
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .footer__copyright {
+      order: 3;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .nav__menu_vertical {
+      display: block;
+    }
+
+    .nav__item_vertical {
+      margin-top: 30px;
+    }
+
+    .nav__item_vertical:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-app {
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-app__text {
+      margin: 16px 0 0 0;
+    }
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .results__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+      grid-template-rows: 196px 1fr;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .container {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .header__container {
+      min-height: 56px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .nav__link {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .header__cover {
+      padding: 30px 0 64px 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .search__btn {
+      position: inherit;
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .searching {
+      padding: 40px 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .results__heading {
+      font-size: 30px;
+      line-height: 34px;
+      max-width: 230px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .results__header {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .results__link {
+      margin-top: 16px;
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .results__cards {
+      grid-template-columns: 1fr;
+      grid-gap: 8px;
+      padding: 36px 0 12px 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .card__heading {
+      line-height: 28px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .results__more-btn {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .results {
+      padding: 32px 0 44px 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .about {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .about__image {
+      margin: 0 auto;
+      font-size: 30px;
+      line-height: 40px;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .about__author {
+      margin: 24px 0 0 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .about__text {
+      margin: 0;
+    }
+
+    .about__text:first-of-type {
+      margin: 16px 0 0 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .nav__item {
+      margin-right: 11px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .logo {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .about__image {
+      width: 272px;
+      height: 272px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .about-app {
+      padding-top: 16px;
+      padding-bottom: 50px;
+    }
+  }
 
 </style>
 </html>
