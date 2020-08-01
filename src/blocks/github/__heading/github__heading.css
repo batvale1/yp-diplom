@@ -1,3 +1,15 @@
 .github__heading {
-    margin: 0;
+    margin: 0 30px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .github__heading {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .github__heading {
+        max-width: 240px;
+    }
 }

@@ -1,0 +1,18 @@
+.button.button_theme_default {
+    background: transparent;
+    border-radius: 80px;
+    color: #1A1B22;
+    padding-right: 0;
+    padding-left: 0;
+    border: 1px solid #1A1B22;
+}
+
+.button.button_theme_default:hover {
+    background: transparent;
+    opacity: 0.9;
+}
+
+.button.button_theme_default:active {
+    background: transparent;
+    opacity: 0.9;
+}

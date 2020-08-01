@@ -1,4 +1,5 @@
 @import "./_theme/_light/button_theme_light.css";
+@import "./_theme/_default/button_theme_default.css";
 
 .button {
     background: #2F71E5;

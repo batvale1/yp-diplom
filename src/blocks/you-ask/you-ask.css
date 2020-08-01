@@ -1,0 +1,16 @@
+@import './__value/you-ask__value.css';
+@import './__heading/you-ask__heading.css';
+@import './__data/you-ask__data.css';
+
+.you-ask {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 500px) {
+    .you-ask {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+}

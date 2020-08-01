@@ -1,0 +1,9 @@
+.github__link {
+    min-width: 160px;
+}
+
+@media screen and (max-width: 500px) {
+    .github__link {
+        display: none;
+    }
+}

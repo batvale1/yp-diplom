@@ -1,0 +1,16 @@
+@import "./__list/breadcrumbs__list.css";
+@import "./__item/breadcrumbs__item.css";
+@import "./__link/breadcrumbs__link.css";
+@import "./__link/_current-route/breadcrumbs__link_current-route.css";
+
+.breadcrumbs {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .breadcrumbs {
+        display: none;
+    }
+}

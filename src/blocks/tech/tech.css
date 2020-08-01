@@ -12,3 +12,17 @@
     padding-bottom: 80px;
     background: #F5F6F7;
 }
+
+@media screen and (max-width: 768px) {
+    .tech {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tech {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}

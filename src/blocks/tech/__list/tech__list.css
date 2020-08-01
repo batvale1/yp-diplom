@@ -1,7 +1,14 @@
 .tech__list {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -40px 0 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 120px);
+    grid-gap: 41px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    .tech__list {
+        grid-gap: 30px;
+    }
 }

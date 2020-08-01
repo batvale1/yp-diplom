@@ -1,7 +1,6 @@
 .tech__content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 344px 1fr;
 }
 
 @media screen and (max-width: 768px) {

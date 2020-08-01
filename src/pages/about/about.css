@@ -1,5 +1,6 @@
 @import url(../../vendor/normalize.css);
 @import url(../../vendor/fonts.css);
+@import url(../../blocks/swiper/swiper.css);
 @import url(../../blocks/about-app/about-app.css);
 @import url(../../blocks/header/header.css);
 @import url(../../blocks/footer/footer.css);
@@ -13,4 +14,4 @@
 @import url(../../blocks/github/github.css);
 @import url(../../blocks/container/container.css);
 @import url(../../blocks/social/social.css);
-@import url(../../blocks/swiper/swiper.css);
+@import url(../../blocks/button/button.css);

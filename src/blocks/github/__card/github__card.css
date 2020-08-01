@@ -5,10 +5,22 @@
     border-radius: 16px;
     padding: 24px;
     box-sizing: border-box;
-    margin-right: 16px;
     flex: none;
+    margin-right: 16px;
 }
 
-.github__card:last-of-type {
-    margin-right: 0;
+@media screen and (max-width: 768px) {
+    .github__card {
+        width: 336px;
+        height: 242px;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .github__card {
+        padding: 16px;
+        width: 288px;
+        height: 264px;
+    }
 }
