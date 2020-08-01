@@ -83,7 +83,10 @@
   </div>
 </section>
 <section class="about container">
-  <img src="<%=require('../../images/author.jpg')%>" alt="аватар" class="about__image">
+  <picture class="about__image">
+    <source media="(min-width:768px)" srcset="<%=require('../../images/author.jpg')%>">
+    <img src="<%=require('../../images/author-mobile.jpg')%>" alt="автор" class="author__image-content">
+  </picture>
   <div class="about__content">
     <h2 class="about__author title">Об авторе</h2>
     <p class="about__text paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
