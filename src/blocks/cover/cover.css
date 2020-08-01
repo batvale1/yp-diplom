@@ -2,6 +2,7 @@
 @import "./__heading/cover__heading.css";
 
 .cover {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     max-width: 608px;
     margin: 0 auto;
 }

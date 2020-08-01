@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
@@ -88,24 +87,24 @@ module.exports = {
       canPrint: true
     }),
     new HtmlWebpackPlugin({
-      inject: true,
+      inject: false,
       template: './src/pages/index/index.html',
       filename: 'index.html',
+      favicon: "./src/favicon.ico",
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
-      inject: true,
+      inject: false,
       template: './src/pages/about/about.html',
       filename: 'about.html',
       chunks: ['about']
     }),
     new HtmlWebpackPlugin({
-      inject: true,
+      inject: false,
       template: './src/pages/analytics/analytics.html',
       filename: 'analytics.html',
       chunks: ['analytics']
     }),
-    new FaviconsWebpackPlugin('./src/favicon.png'),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
       'NODE_ENV': JSON.stringify(process.env.NODE_ENV)

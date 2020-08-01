@@ -2,6 +2,7 @@
 @import "./__input/search__input.css";
 
 .search {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     position: relative;
     max-width: 608px;
 }

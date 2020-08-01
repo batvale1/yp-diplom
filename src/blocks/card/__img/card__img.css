@@ -3,4 +3,9 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: opacity .2s linear;
+}
+
+.card__img:hover {
+    opacity: .8;
 }

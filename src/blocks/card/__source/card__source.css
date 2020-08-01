@@ -9,6 +9,11 @@
     font-weight: bold;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+    transition: opacity .2s linear;
+}
+
+.card__source:hover {
+    opacity: .8;
 }
 
 @media screen and (max-width: 768px) {

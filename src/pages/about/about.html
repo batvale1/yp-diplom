@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" nonce="12ac16c82aa341ab9f74ec49f05" src="//local.adguard.org?ts=1596270067262&amp;type=content-script&amp;dmn=realfavicongenerator.net&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1"></script>
+  <script type="text/javascript" nonce="12ac16c82aa341ab9f74ec49f05" src="//local.adguard.org?ts=1596270067262&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <title>О сайте</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
   <script src="<%= htmlWebpackPlugin.files.js %>" defer></script>
@@ -12,14 +21,14 @@
 <header class="header">
   <div class="header__main header__main_theme_light">
     <div class="header__container container">
-      <a href="/" class="header__logo logo logo_theme_light">NewsAnalyzer</a>
+      <a href="index.html" class="header__logo logo logo_theme_light">NewsAnalyzer</a>
       <nav class="header__nav nav nav_theme_dark">
         <ul class="nav__menu">
           <li class="nav__item">
-            <a href="/" class="nav__link nav__link_theme_light">Главная</a>
+            <a href="index.html" class="nav__link nav__link_theme_light">Главная</a>
           </li>
           <li class="nav__item nav__item_active-theme_light">
-            <a href="/about.html" class="nav__link nav__link_theme_light nav__link_active_light">О проекте</a>
+            <a href="about.html" class="nav__link nav__link_theme_light nav__link_active_light">О проекте</a>
           </li>
         </ul>
       </nav>
@@ -86,7 +95,7 @@
 <section class="github">
   <div class="github__header container">
     <h2 class="github__heading title">История коммитов из GitHub</h2>
-    <a href="https://github.com/" class="github__link link">Открыть в Github</a>
+    <a href="https://github.com/" target="_blank" class="github__link link">Открыть в Github</a>
   </div>
   <div class="github__container swiper">
     <div class="swiper__container">
@@ -157,25 +166,25 @@
   <nav class="footer__nav nav">
     <ul class="nav__menu nav__menu_vertical">
       <li class="nav__item nav__item_vertical">
-        <p class="nav__link nav__link_theme_default">Главная</p>
+        <a href="index.html" class="nav__link nav__link_theme_default">Главная</a>
       </li>
       <li class="nav__item nav__item_vertical">
-        <a href="/about" class="nav__link nav__link_theme_default">О проекте</a>
+        <a href="about.html" class="nav__link nav__link_theme_default">О проекте</a>
       </li>
       <li class="nav__item nav__item_vertical">
-        <a href="https://praktikum.yandex.ru/" class="nav__link nav__link_theme_default">Яндекс.Практикум</a>
+        <a href="https://praktikum.yandex.ru/" target="_blank" class="nav__link nav__link_theme_default">Яндекс.Практикум</a>
       </li>
     </ul>
   </nav>
   <nav class="footer__social social">
     <ul class="social__menu">
       <li class="social__item">
-        <a href="/" class="social__link">
+        <a href="https://github.com/" class="social__link" target="_blank">
           <img src="<%=require('../../images/github-icon.svg')%>" alt="github" class="social-icon">
         </a>
       </li>
       <li class="social__item">
-        <a href="/about" class="social__link">
+        <a href="https://www.facebook.com/" class="social__link" target="_blank">
           <img src="<%=require('../../images/fb-icon.svg')%>" alt="facebook" class="social-icon">
         </a>
       </li>
