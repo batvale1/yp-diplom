@@ -1,0 +1,17 @@
+.button.button_theme_light {
+    background: #FFFFFF;
+    border-radius: 80px;
+    color: #1A1B22;
+    padding-right: 84px;
+    padding-left: 84px;
+}
+
+.button.button_theme_light:hover {
+    background: #FFFFFF;
+    opacity: 0.9;
+}
+
+.button.button_theme_light:active {
+    background: #FFFFFF;
+    opacity: 0.9;
+}

@@ -1,0 +1,64 @@
+@import "./__container/github__container.css";
+@import "./__header/github__header.css";
+@import "./__heading/github__heading.css";
+@import "./__card-date/github__card-date.css";
+@import "./__card-author/github__card-author.css";
+@import "./__card-author-image/github__card-author-image.css";
+@import "./__author-name/github__author-name.css";
+@import "./__author-email/github__author-email.css";
+@import "./__card-content/github__card-content.css";
+@import "./__card/github__card.css";
+@import "./__link/github__link.css";
+
+.github {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background: #F5F6F7;
+    padding-top: 72px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.github:before {
+    content: '';
+    background-image: linear-gradient(to right, rgba(245, 246, 247, 1), rgba(255,23,34,0));
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 88px;
+    z-index: 5;
+}
+
+.github:after {
+    content: '';
+    background-image: linear-gradient(to right, rgba(255,23,34,0), rgba(245, 246, 247, 1));
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 88px;
+    z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+    .github {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .github {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .github:before {
+        display: none;
+    }
+
+    .github:after {
+        display: none;
+    }
+}

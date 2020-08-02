@@ -1,0 +1,16 @@
+@import "./__menu/nav__menu.css";
+@import "./__item/nav__item.css";
+@import "./__item/active-theme/_dark/nav__item_active-theme_dark.css";
+@import "./__item/active-theme/_light/nav__item_active-theme_light.css";
+@import "./__link/nav__link.css";
+@import "./__link/_theme/_light/nav__link_theme_light.css";
+@import "./__link/_active/_light/nav__link_active_light.css";
+@import "./__link/_active-theme/_dark/nav__link_active-theme_dark.css";
+@import "./__menu/_vertical/nav__menu_vertical.css";
+@import "./__item/_vertical/nav__item_vertical.css";
+@import "./__link/_theme/_default/nav__link_theme_default.css";
+
+.nav {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    display: flex;
+}

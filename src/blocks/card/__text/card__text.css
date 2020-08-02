@@ -1,0 +1,23 @@
+.card__text {
+    margin: 16px 0 0 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+    display: -webkit-box;
+    -webkit-line-clamp: 5 ;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 768px) {
+    .card__text {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 10px;
+        max-height: 88px;
+        overflow: hidden;
+        -webkit-line-clamp: 4;
+    }
+}

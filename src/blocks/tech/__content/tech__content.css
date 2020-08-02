@@ -1,0 +1,10 @@
+.tech__content {
+    display: grid;
+    grid-template-columns: 344px 1fr;
+}
+
+@media screen and (max-width: 768px) {
+    .tech__content {
+        display: block;
+    }
+}

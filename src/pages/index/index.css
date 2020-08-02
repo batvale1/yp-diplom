@@ -1,0 +1,29 @@
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts.css);
+@import url(../../blocks/logo/logo.css);
+@import url(../../blocks/searching/searching.css);
+@import url(../../blocks/footer/footer.css);
+@import url(../../blocks/social/social.css);
+@import url(../../blocks/about/about.css);
+@import url(../../blocks/title/title.css);
+@import url(../../blocks/paragraph/paragraph.css);
+@import url(../../blocks/results/results.css);
+@import url(../../blocks/link/link.css);
+@import url(../../blocks/card/card.css);
+@import url(../../blocks/body/body.css);
+@import url(../../blocks/container/container.css);
+@import url(../../blocks/header/header.css);
+@import url(../../blocks/nav/nav.css);
+@import url(../../blocks/search/search.css);
+@import url(../../blocks/cover/cover.css);
+@import url(../../blocks/button/button.css);
+
+
+.empty-search__emotion {
+    background-image: url('../../images/empty-emotion.svg');
+    background-size: cover;
+    background-position: center;
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
+}

@@ -1,0 +1,13 @@
+.search__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .search__btn {
+        position: inherit;
+        width: 100%;
+        margin-top: 16px;
+    }
+}

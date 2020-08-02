@@ -1,0 +1,11 @@
+.results__more-btn {
+    max-width: 288px;
+    margin: 0 auto 0;
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .results__more-btn {
+        width: 100%;
+    }
+}

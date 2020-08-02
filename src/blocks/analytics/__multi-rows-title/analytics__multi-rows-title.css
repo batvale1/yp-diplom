@@ -1,0 +1,4 @@
+.analytics__multi-rows-title {
+    display: flex;
+    flex-direction: column;
+}

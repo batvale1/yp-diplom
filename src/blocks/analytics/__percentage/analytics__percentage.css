@@ -1,0 +1,11 @@
+.analytics__percentage {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 500px) {
+    .analytics__percentage {
+        display: none;
+    }
+}

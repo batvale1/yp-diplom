@@ -1,0 +1,33 @@
+@import "./__table/analytics__table.css";
+@import "./__heading/analytics__heading.css";
+@import "./__row/analytics__row.css";
+@import "./__row/_bordered/analytics__row_bordered.css";
+@import "./__row/_header/analytics__row_header.css";
+@import "./__value/analytics__value.css";
+@import "./__percentage/analytics__percentage.css";
+@import "./__title/analytics__title.css";
+@import "./__title/_ref/analytics__title_ref.css";
+@import "./__value-number/analytics__value-number.css";
+@import "./__multi-rows-title/analytics__multi-rows-title.css";
+@import "./__row-data/analytics__row-data.css";
+
+.analytics {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background: #F5F6F7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .analytics {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .analytics {
+        padding-top: 24px;
+        padding-bottom: 38px;
+    }
+}

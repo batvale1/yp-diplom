@@ -1,0 +1,16 @@
+.breadcrumbs__item {
+    margin-left: 8px;
+    display: flex;
+}
+
+.breadcrumbs__item:first-child {
+    margin-left: 0;
+}
+
+.breadcrumbs__item:not(:first-child):before {
+    content: "/";
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    margin-right: 8px;
+}

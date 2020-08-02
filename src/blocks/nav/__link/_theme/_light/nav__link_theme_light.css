@@ -1,0 +1,7 @@
+.nav__link_theme_light {
+    color: #B6BCBF;
+}
+
+.nav__link_theme_light:hover {
+    color: #1A1B22;
+}

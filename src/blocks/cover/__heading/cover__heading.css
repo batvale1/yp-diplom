@@ -1,0 +1,15 @@
+.cover__heading {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 64px;
+    color: #FFFFFF;
+    max-width: 350px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .cover__heading {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}

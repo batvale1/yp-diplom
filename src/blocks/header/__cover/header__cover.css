@@ -1,0 +1,20 @@
+.header__cover {
+    max-width: 608px;
+    min-height: 496px;
+    padding: 80px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .header__cover {
+        padding: 40px 0 48px 0;
+        min-height: 336px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__cover {
+        padding: 30px 0 64px 0;
+    }
+}

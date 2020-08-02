@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" nonce="12ac16c82aa341ab9f74ec49f05" src="//local.adguard.org?ts=1596270067262&amp;type=content-script&amp;dmn=realfavicongenerator.net&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1"></script>
+  <script type="text/javascript" nonce="12ac16c82aa341ab9f74ec49f05" src="//local.adguard.org?ts=1596270067262&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>NewsAnalyzer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <script src="<%= htmlWebpackPlugin.files.js %>" defer></script>
+</head>
+<body class="body">
+<header class="header header_theme_dark">
+  <div class="header__main">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo logo">NewsAnalyzer</a>
+      <nav class="header__nav nav nav_theme_dark">
+        <ul class="nav__menu">
+          <li class="nav__item nav__item_active-theme_dark">
+            <a href="index.html" class="nav__link nav__link_active-theme_dark">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">О проекте</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header__cover">
+    <div class="cover container">
+      <h1 class="cover__heading">Что в мире творится</h1>
+      <p class="cover__text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
+        прошедшую неделю.</p>
+      <form class="header__search search">
+        <input required minlength="3" type="text" class="search__input" placeholder="Природа">
+        <button class="search__btn button" type="submit">Искать</button>
+      </form>
+    </div>
+  </div>
+</header>
+<section class="searching">
+  <div class="searching__emotion"></div>
+  <h2 class="searching__heading">Ничего не найдено</h2>
+  <p class="searching__text">К сожалению по вашему запросу ничего не найдено.</p>
+</section>
+<section class="searching">
+  <i class="searching__preloader"></i>
+  <p class="searching__process-caption">Идет поиск новостей...</p>
+</section>
+<section class="results">
+  <div class="container">
+    <div class="results__header">
+      <h2 class="results__heading">Результаты поиска</h2>
+      <a href="analytics.html" class="results__link link">Посмотреть аналитику</a>
+    </div>
+    <ul class="results__cards">
+      <li class="card">
+        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+        <div class="card__container">
+          <div class="card__content">
+            <p class="card__caption">2 августа, 2019</p>
+            <h3 class="card__heading">Национальное достояние – парки</h3>
+            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
+              система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          </div>
+          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
+        </div>
+      </li>
+      <li class="card">
+        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+        <div class="card__container">
+          <div class="card__content">
+            <p class="card__caption">2 августа, 2019</p>
+            <h3 class="card__heading">Лесные огоньки: история одной фотографии</h3>
+            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
+              запечатлеть ускользающую красоту одного
+              из местных чудес природы.</p>
+          </div>
+          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
+        </div>
+      </li>
+      <li class="card">
+        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+        <div class="card__container">
+          <div class="card__content">
+            <p class="card__caption">2 августа, 2019</p>
+            <h3 class="card__heading">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости
+              их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+          </div>
+          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
+        </div>
+      </li>
+      <li class="card">
+        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+        <div class="card__container">
+          <div class="card__content">
+            <p class="card__caption">2 августа, 2019</p>
+            <h3 class="card__heading">Национальное достояние – парки</h3>
+            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
+              система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          </div>
+          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
+        </div>
+      </li>
+      <li class="card">
+        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+        <div class="card__container">
+          <div class="card__content">
+            <p class="card__caption">2 августа, 2019</p>
+            <h3 class="card__heading">Лесные огоньки: история одной фотографии</h3>
+            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
+              запечатлеть ускользающую красоту одного
+              из местных чудес природы.</p>
+          </div>
+          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
+        </div>
+      </li>
+      <li class="card" >
+        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
+        <div class="card__container">
+          <div class="card__content">
+            <p class="card__caption">2 августа, 2019</p>
+            <h3 class="card__heading">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+            <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости
+              их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+          </div>
+          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
+        </div>
+      </li>
+    </ul>
+    <button class="results__more-btn button button_theme_light">Показать еще</button>
+  </div>
+</section>
+<section class="about container">
+  <picture class="about__image">
+    <source media="(min-width:768px)" srcset="<%=require('../../images/author.jpg')%>">
+    <img src="<%=require('../../images/author-mobile.jpg')%>" alt="автор" class="author__image-content">
+  </picture>
+  <div class="about__content">
+    <h2 class="about__author title">Об авторе</h2>
+    <p class="about__text paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+      занимаетесь, какими технологиями разработки владеете.</p>
+    <p class="about__text paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
+      чем можете помочь потенциальным заказчикам.</p>
+  </div>
+</section>
+<footer class="footer container">
+  <p class="footer__copyright">&copy; 2020 Supersite</p>
+  <nav class="footer__nav nav">
+    <ul class="nav__menu nav__menu_vertical">
+      <li class="nav__item nav__item_vertical">
+        <a href="index.html" class="nav__link nav__link_theme_default">Главная</a>
+      </li>
+      <li class="nav__item nav__item_vertical">
+        <a href="about.html" class="nav__link nav__link_theme_default">О проекте</a>
+      </li>
+      <li class="nav__item nav__item_vertical">
+        <a href="https://praktikum.yandex.ru/" class="nav__link nav__link_theme_default">Яндекс.Практикум</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="footer__social social">
+    <ul class="social__menu">
+      <li class="social__item">
+        <a href="https://github.com/" class="social__link">
+          <img src="<%=require('../../images/github-icon.svg')%>" alt="github" class="social-icon">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://www.facebook.com/" class="social__link">
+          <img src="<%=require('../../images/fb-icon.svg')%>" alt="facebook" class="social-icon">
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+</body>
+</html>

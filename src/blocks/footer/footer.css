@@ -1,0 +1,17 @@
+@import "./__copyright/footer__copyright.css";
+
+.footer {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
