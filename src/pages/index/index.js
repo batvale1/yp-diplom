@@ -34,6 +34,7 @@ function showCards() {
   const searchValue = search.getSearchValue();
   results.clear();
   searchLoading.showLoadingMessage();
+  search.disableForm();
   newsAPI.getNews(searchValue)
     .then(res => {
       const {totalResults, articles} = res;
@@ -47,16 +48,20 @@ function showCards() {
         searchNothingFound.hide();
       }
       //throw new Error('test'); тест ошибки
-      console.log(dataStorage.getData('articles'));
       renderCards(articles);
     })
-    .catch(() => {
+    .finally(() => {
+      search.enableForm();
+    })
+    .catch((e) => {
+      console.log(e);
       searchNothingFound.showErrorMessage();
     })
 }
 
 function init() {
   renderCards(dataStorage.getData('articles'));
+  search.setInitialValue(dataStorage.getData('searchValue'));
 }
 
 init();

@@ -38,4 +38,19 @@ export default class Search extends BaseComponent{
       return true;
     }
   };
+
+  setInitialValue = (value) => {
+    if (value) {
+      this.inputElem.setAttribute('value', value);
+      this.checkValidity();
+    }
+  };
+
+  disableForm = () => {
+    this.element.style.pointerEvents = 'none';
+  }
+
+  enableForm = () => {
+    this.element.style.pointerEvents = 'initial';
+  }
 }
