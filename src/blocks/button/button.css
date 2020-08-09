@@ -1,5 +1,6 @@
 @import "./_theme/_light/button_theme_light.css";
 @import "./_theme/_default/button_theme_default.css";
+@import "./_hidden/button_hidden.css";
 
 .button {
     font-family: Roboto, Arial, Helvetica, sans-serif;
