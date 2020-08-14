@@ -1,19 +1,22 @@
-import gate from '../../utils/gate';
-import {CARDS_PER_TIME, NEWS_API_KEY, NEWS_API_URL} from "../../constants/constants";
+import {CARDS_PER_TIME, NEWS_API_KEY, NEWS_API_URL, NEWS_BY_DAYS_AGO} from "../../constants/constants";
 import {addToDate, dateInISOFormat} from "../../utils/date-formatter";
+import Gate from "./Gate";
 
-export default class NewsApi {
-  getNews = (requestValue, page) => {
-    return gate.get(NEWS_API_URL, {
+export default class NewsApi extends Gate{
+
+  getNews = (requestValue) => {
+
+    return this._get(NEWS_API_URL, {
       q: requestValue,
       apiKey: NEWS_API_KEY,
       from: dateInISOFormat(addToDate(new Date, {
-        days: -7
+        days: -NEWS_BY_DAYS_AGO
       })),
       to: dateInISOFormat(new Date),
       language: 'ru',
-      pageSize: CARDS_PER_TIME,
-      page
+      pageSize: CARDS_PER_TIME
     });
+
   }
+
 }

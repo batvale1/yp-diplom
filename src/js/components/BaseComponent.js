@@ -2,22 +2,22 @@ export default class BaseComponent {
 
   constructor(element, callbacks = {}, dependencies = {}) {
 
-    this.element = element;
-    this.hidingClass = '';
-    this.callbacks = callbacks;
-    this.dependencies = dependencies;
+    this._element = element;
+    this._invisibleClass = '';
+    this._callbacks = callbacks;
+    this._dependencies = dependencies;
   }
 
   addEventListener(...args) {
-    this.element.addEventListener(...args);
+    this._element.addEventListener(...args);
   }
 
   show() {
-    this.element.classList.remove(this.hidingClass);
+    this._element.classList.remove(this._invisibleClass);
   }
 
   hide() {
-    this.element.classList.add(this.hidingClass);
+    this._element.classList.add(this._invisibleClass);
   }
 
 }

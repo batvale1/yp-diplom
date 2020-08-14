@@ -4,6 +4,10 @@
     right: 0;
 }
 
+.search__btn:disabled {
+    cursor: not-allowed;
+}
+
 @media screen and (max-width: 500px) {
     .search__btn {
         position: inherit;

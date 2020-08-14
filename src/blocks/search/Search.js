@@ -2,55 +2,59 @@ import BaseComponent from "../../js/components/BaseComponent";
 
 export default class Search extends BaseComponent{
 
+  //markup
+  #inputElem;
+  #submitBtn;
+
+  //callbacks
+  #searchHandler;
+
   constructor(...args) {
     super(...args);
-    this.inputElem = this.element.querySelector('.search__input');
-    this.searchHandler = this.callbacks.showCards;
 
-    this.element.addEventListener('submit', (e) => {
-      e.preventDefault();
-      this.submitHandler();
-    });
+    //markup
+    this.#inputElem = this._element.querySelector('.search__input');
+    this.#submitBtn = this._element.querySelector('.search__btn');
 
-    this.inputElem.addEventListener('input', () => {
-      this.checkValidity();
-    });
+    //callbacks
+    this.#searchHandler = this._callbacks.showCards;
 
-    this.checkValidity();
+    //dependencies
+    const { FormValidator } = this._dependencies;
+
+    if ( FormValidator ) {
+      const editingCardFormValidation = new FormValidator(this._element, this.#submitBtn);
+      editingCardFormValidation.setFormValidationListeners();
+    }
+
   };
+
+  addEventListeners() {
+
+    this.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (typeof this.#searchHandler === 'function') {
+        this.#searchHandler();
+      }
+    });
+
+  }
 
   getSearchValue = () => {
-    return this.inputElem.value;
-  };
-
-  submitHandler = () => {
-    if (typeof this.searchHandler === 'function') {
-      this.searchHandler();
-    }
-  };
-
-  checkValidity = () => {
-    if (!this.element.checkValidity() && this.inputElem.validity.valueMissing) {
-      this.inputElem.setCustomValidity('Нужно ввести ключевое слово');
-      return false;
-    } else {
-      this.inputElem.setCustomValidity('');
-      return true;
-    }
+    return this.#inputElem.value;
   };
 
   setInitialValue = (value) => {
     if (value) {
-      this.inputElem.setAttribute('value', value);
-      this.checkValidity();
+      this.#inputElem.setAttribute('value', value);
     }
   };
 
   disableForm = () => {
-    this.element.style.pointerEvents = 'none';
-  }
+    this._element.style.pointerEvents = 'none';
+  };
 
   enableForm = () => {
-    this.element.style.pointerEvents = 'initial';
-  }
+    this._element.style.pointerEvents = 'initial';
+  };
 }

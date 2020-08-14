@@ -1,6 +1,7 @@
 @import './__value/you-ask__value.css';
 @import './__heading/you-ask__heading.css';
 @import './__data/you-ask__data.css';
+@import "./_hidden/.you-ask__hidden.css";
 
 .you-ask {
     font-family: Roboto, Arial, Helvetica, sans-serif;

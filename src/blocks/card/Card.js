@@ -1,15 +1,17 @@
-import BaseComponent from "../../js/components/BaseComponent";
+import TemplatedBaseComponent from "../../js/components/TemplatedBaseComponent";
+import {getMonth, MONTHS_FORMAT_PARENT_CASE} from "../../js/utils/date-formatter";
 
-export default class Card extends BaseComponent{
+export default class Card extends TemplatedBaseComponent{
 
-  constructor(data, template) {
-    super();
-    this.data = data;
-    this.template = template;
+  constructor(...args) {
+
+    super(...args);
+
   }
 
-  create = () => {
-    const newCard = this.template.cloneNode(true);
+  create = ({url, urlToImage, title, publishedAt, description, source}) => {
+
+    const newCard = this._template.cloneNode(true);
     const cardLink = newCard.querySelector('.card__link');
     const cardImage = newCard.querySelector('.card__img');
     const cardPublishedAt = newCard.querySelector('.card__caption');
@@ -17,18 +19,22 @@ export default class Card extends BaseComponent{
     const cardDescription = newCard.querySelector('.card__text');
     const cardSource = newCard.querySelector('.card__source');
 
-    cardLink.setAttribute('href', this.data.url);
-    cardImage.setAttribute('src', this.data.urlToImage);
+    cardLink.setAttribute('href', url);
+
+    cardImage.setAttribute('src', urlToImage);
     cardImage.onerror = () => {
       cardImage.setAttribute('src', require('../../images/no-image.jpg'));
     };
-    cardImage.setAttribute('alt', this.data.title);
-    cardPublishedAt.textContent = this.data.publishedAt;
-    cardTitle.textContent = this.data.title;
-    cardDescription.textContent = this.data.description;
-    cardSource.textContent = this.data.source.name;
+    cardImage.setAttribute('alt', title);
 
-    this.element = newCard;
+    const dateToRender = new Date(publishedAt);
+    cardPublishedAt.textContent = `${dateToRender.getDate().toString()} ${getMonth(dateToRender, MONTHS_FORMAT_PARENT_CASE)}, ${dateToRender.getFullYear()}`;
+
+    cardTitle.textContent = title;
+    cardDescription.textContent = description;
+    cardSource.textContent = source.name;
+
+    this._element = newCard;
     return newCard;
   }
 }
