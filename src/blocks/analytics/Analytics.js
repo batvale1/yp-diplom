@@ -29,7 +29,7 @@ export default class Analytics extends BaseComponent{
 
   }
 
-  create() {
+  create = () => {
 
     if (typeof this.#getData === 'function') {
       //получение исходных данных
@@ -70,7 +70,7 @@ export default class Analytics extends BaseComponent{
       this.hide();
     }
 
-  }
+  };
 
   #groupDataByDay = (articles) => {
 

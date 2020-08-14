@@ -7,14 +7,14 @@ export default class FormValidator {
     this.submitBtn = submitBtn;
   }
 
-  setFormValidationListeners() {
+  setFormValidationListeners = () => {
     //выставляем ошибки и статус сабмита при инпутах
-    this.form.addEventListener('input', this._checkInputValidity.bind(this));
+    this.form.addEventListener('input', this.#checkInputValidity.bind(this));
     //выставляем изначальное состояние формы при открытии
     this.setSubmitButtonState();
-  }
+  };
 
-  _checkInputValidity(event) {
+  #checkInputValidity = (event) => {
     const curItem = event.target;
     const errorItem = curItem.nextElementSibling;
     if (curItem.validity.valueMissing) {
@@ -24,9 +24,9 @@ export default class FormValidator {
     }
 
     this.setSubmitButtonState(event.currentTarget);
-  }
+  };
 
-  setSubmitButtonState() {
+  setSubmitButtonState = () => {
     const submitBtn = this.submitBtn;
     if (this.form.checkValidity()) {
       submitBtn.removeAttribute('disabled');

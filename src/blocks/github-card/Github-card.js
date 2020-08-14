@@ -14,7 +14,7 @@ export default class GithubCard extends TemplatedBaseComponent{
 
   }
 
-  create({commit, author}) {
+  create = ({commit, author}) => {
     const newCard = this._template.cloneNode(true);
     const newCardDate = newCard.querySelector('.github-card__date');
     const newCardAvatar = newCard.querySelector('.github-card__author-image');

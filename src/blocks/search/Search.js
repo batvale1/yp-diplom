@@ -29,7 +29,7 @@ export default class Search extends BaseComponent{
 
   };
 
-  addEventListeners() {
+  addEventListeners = () => {
 
     this.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -38,7 +38,7 @@ export default class Search extends BaseComponent{
       }
     });
 
-  }
+  };
 
   getSearchValue = () => {
     return this.#inputElem.value;

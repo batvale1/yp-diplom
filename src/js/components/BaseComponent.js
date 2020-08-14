@@ -8,16 +8,16 @@ export default class BaseComponent {
     this._dependencies = dependencies;
   }
 
-  addEventListener(...args) {
+  addEventListener = (...args) => {
     this._element.addEventListener(...args);
-  }
+  };
 
-  show() {
+  show = () => {
     this._element.classList.remove(this._invisibleClass);
-  }
+  };
 
-  hide() {
+  hide = () => {
     this._element.classList.add(this._invisibleClass);
-  }
+  };
 
 }

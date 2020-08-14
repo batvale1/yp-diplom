@@ -23,7 +23,7 @@ export default class Searching extends BaseComponent{
 
   }
 
-  showErrorMessage() {
+  showErrorMessage = () => {
 
     if (this.#messageTitleElem) {
       this.#messageTitleElem.textContent = ERROR_SEARCH_TITLE;
@@ -35,7 +35,7 @@ export default class Searching extends BaseComponent{
 
   }
 
-  showEmptyResultsMessage() {
+  showEmptyResultsMessage = () => {
 
     if (this.#messageTitleElem) {
       this.#messageTitleElem.textContent = NOTHING_FOUND_TITLE;
@@ -47,7 +47,7 @@ export default class Searching extends BaseComponent{
 
   }
 
-  showLoadingMessage() {
+  showLoadingMessage = () => {
 
     if (this.#messageElem) {
       this.#messageElem.textContent = LOADING_SEARCH_TEXT;
