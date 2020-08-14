@@ -73,6 +73,7 @@ function showCards() {
     })
     .catch((e) => {
 
+      alert(e);
       searchLoading.hide();
       searchNothingFound.showErrorMessage();
 
