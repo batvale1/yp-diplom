@@ -1,0 +1,12 @@
+.github-card__author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .github-card__author {
+        margin-right: 8px;
+    }
+}

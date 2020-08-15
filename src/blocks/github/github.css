@@ -1,12 +1,6 @@
 @import "./__container/github__container.css";
 @import "./__header/github__header.css";
 @import "./__heading/github__heading.css";
-@import "./__card-date/github__card-date.css";
-@import "./__card-author/github__card-author.css";
-@import "./__card-author-image/github__card-author-image.css";
-@import "./__author-name/github__author-name.css";
-@import "./__author-email/github__author-email.css";
-@import "./__card-content/github__card-content.css";
 @import "./__card/github__card.css";
 @import "./__link/github__link.css";
 

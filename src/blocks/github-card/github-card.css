@@ -1,0 +1,35 @@
+@import "./__content/github__content.css";
+@import "./__author/github__card-author.css";
+@import "./__date/github__card-date.css";
+@import "./__author-image/github__card-author-image.css";
+@import "./__author-email/github__author-email.css";
+@import "./__author-name/github__author-name.css";
+@import "./__author-contacts/github-card__author-contacts.css";
+
+.github-card {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    width: 400px;
+    height: 288px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+    flex: none;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .github-card {
+        width: 336px;
+        height: 242px;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .github-card {
+        padding: 16px;
+        width: 288px;
+        height: 264px;
+    }
+}

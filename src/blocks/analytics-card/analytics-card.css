@@ -1,0 +1,11 @@
+@import "./__data/analytics-card__data.css";
+@import "./__value/analytics-card__value.css";
+@import "./__value-number/analytics-card__value-number.css";
+@import "./__title/analytics-card__title.css";
+
+.analytics-card {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    display: grid;
+    align-items: end;
+    overflow: hidden;
+}

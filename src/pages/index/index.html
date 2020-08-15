@@ -40,20 +40,21 @@
       <p class="cover__text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
         прошедшую неделю.</p>
       <form class="header__search search">
-        <input required minlength="3" type="text" class="search__input" placeholder="Природа">
+        <input required type="text" class="search__input" placeholder="Природа">
+        <span class="search__error" aria-live="polite"></span>
         <button class="search__btn button" type="submit">Искать</button>
       </form>
     </div>
   </div>
 </header>
-<section class="searching">
+<section class="searching searching_hidden searching_type_nothing-found">
   <div class="searching__emotion"></div>
   <h2 class="searching__heading">Ничего не найдено</h2>
   <p class="searching__text">К сожалению по вашему запросу ничего не найдено.</p>
 </section>
-<section class="searching">
+<section class="searching searching_hidden searching_type_loading">
   <i class="searching__preloader"></i>
-  <p class="searching__process-caption">Идет поиск новостей...</p>
+  <p class="searching__text">Идет поиск новостей...</p>
 </section>
 <section class="results">
   <div class="container">
@@ -62,95 +63,35 @@
       <a href="analytics.html" class="results__link link">Посмотреть аналитику</a>
     </div>
     <ul class="results__cards">
-      <li class="card">
-        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
-        <div class="card__container">
-          <div class="card__content">
-            <p class="card__caption">2 августа, 2019</p>
-            <h3 class="card__heading">Национальное достояние – парки</h3>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
-              система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+      <template id="card-template">
+        <li class="card">
+          <a href="https://www.google.com/" class="card__link" target="_blank"><img src="" alt="" class="card__img"></a>
+          <div class="card__container">
+            <div class="card__content">
+              <p class="card__caption"></p>
+              <h3 class="card__heading"></h3>
+              <p class="card__text"></p>
+            </div>
+            <span class="card__source">{{ source.name }}</span>
           </div>
-          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
-        </div>
-      </li>
-      <li class="card">
-        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
-        <div class="card__container">
-          <div class="card__content">
-            <p class="card__caption">2 августа, 2019</p>
-            <h3 class="card__heading">Лесные огоньки: история одной фотографии</h3>
-            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-              запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-          </div>
-          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
-        </div>
-      </li>
-      <li class="card">
-        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
-        <div class="card__container">
-          <div class="card__content">
-            <p class="card__caption">2 августа, 2019</p>
-            <h3 class="card__heading">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости
-              их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-          </div>
-          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
-        </div>
-      </li>
-      <li class="card">
-        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
-        <div class="card__container">
-          <div class="card__content">
-            <p class="card__caption">2 августа, 2019</p>
-            <h3 class="card__heading">Национальное достояние – парки</h3>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
-              система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          </div>
-          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
-        </div>
-      </li>
-      <li class="card">
-        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
-        <div class="card__container">
-          <div class="card__content">
-            <p class="card__caption">2 августа, 2019</p>
-            <h3 class="card__heading">Лесные огоньки: история одной фотографии</h3>
-            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-              запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-          </div>
-          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
-        </div>
-      </li>
-      <li class="card" >
-        <a href="https://www.google.com/" target="_blank"><img src="<%=require('../../images/parks.jpg')%>" alt="парки" class="card__img"></a>
-        <div class="card__container">
-          <div class="card__content">
-            <p class="card__caption">2 августа, 2019</p>
-            <h3 class="card__heading">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости
-              их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-          </div>
-          <a href="https://www.google.com/" class="card__source" target="_blank">Лента.ру</a>
-        </div>
-      </li>
+        </li>
+      </template>
     </ul>
     <button class="results__more-btn button button_theme_light">Показать еще</button>
   </div>
 </section>
 <section class="about container">
-  <picture class="about__image">
+  <picture>
     <source media="(min-width:768px)" srcset="<%=require('../../images/author.jpg')%>">
-    <img src="<%=require('../../images/author-mobile.jpg')%>" alt="автор" class="author__image-content">
+    <img src="<%=require('../../images/author-mobile.jpg')%>" alt="автор" class="about__image">
   </picture>
   <div class="about__content">
     <h2 class="about__author title">Об авторе</h2>
-    <p class="about__text paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-      занимаетесь, какими технологиями разработки владеете.</p>
-    <p class="about__text paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
-      чем можете помочь потенциальным заказчикам.</p>
+    <p class="about__text paragraph">Мы все учились понемногу
+      чему-нибудь и как-нибудь,
+      так воспитаньем, слава богу,
+      у нас немудрено блеснуть. (с)</p>
+    <p class="about__text paragraph">Единственное, что мешает мне учиться, — это полученное мной образование. (с)</p>
   </div>
 </section>
 <footer class="footer container">

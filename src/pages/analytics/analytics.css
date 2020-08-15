@@ -9,5 +9,7 @@
 @import url(../../blocks/container/container.css);
 @import url(../../blocks/social/social.css);
 @import url(../../blocks/analytics/analytics.css);
+@import url(../../blocks/analytics-card/analytics-card.css);
 @import url(../../blocks/you-ask/you-ask.css);
 @import url(../../blocks/breadcrumbs/breadcrumbs.css);
+@import url(../../blocks/searching/searching.css);

@@ -1,9 +1,6 @@
 .analytics__row-data {
     margin-top: 56px;
-    display: grid;
     grid-template-columns: 104px 1fr;
-    align-items: end;
-    overflow: hidden;
 }
 
 @media screen and (max-width: 500px) {

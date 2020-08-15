@@ -83,16 +83,17 @@
   </div>
 </section>
 <section class="about container">
-  <picture class="about__image">
+  <picture>
     <source media="(min-width:768px)" srcset="<%=require('../../images/author.jpg')%>">
-    <img src="<%=require('../../images/author-mobile.jpg')%>" alt="автор" class="author__image-content">
+    <img src="<%=require('../../images/author-mobile.jpg')%>" alt="автор" class="about__image">
   </picture>
   <div class="about__content">
     <h2 class="about__author title">Об авторе</h2>
-    <p class="about__text paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-      занимаетесь, какими технологиями разработки владеете.</p>
-    <p class="about__text paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
-      чем можете помочь потенциальным заказчикам.</p>
+    <p class="about__text paragraph">Мы все учились понемногу
+      чему-нибудь и как-нибудь,
+      так воспитаньем, слава богу,
+      у нас немудрено блеснуть. (с)</p>
+    <p class="about__text paragraph">Единственное, что мешает мне учиться, — это полученное мной образование. (с)</p>
   </div>
 </section>
 <section class="github">
@@ -102,62 +103,25 @@
   </div>
   <div class="github__container swiper">
     <div class="swiper__container">
-      <div class="swiper-wrapper swiper__wrapper">
-        <div class="swiper-slide github__card">
-          <p class="github__card-date">14 августа, 2019</p>
-          <div class="github__card-author">
-            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="аватар" class="github__card-author-image">
-            <div class="github__card__author-contacts">
-              <p class="github__author-name">Антон Дмитриев</p>
-              <p class="github__author-email">anton@yandex.ru</p>
+      <div class="swiper-wrapper swiper__wrapper github__swiper">
+        <template id="github-card-template">
+          <div class="swiper-slide github-card">
+            <p class="github-card__date">14 августа, 2019</p>
+            <div class="github-card__author">
+              <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="аватар" class="github-card__author-image">
+              <div class="github-card__author-contacts">
+                <p class="github-card__author-name">Антон Дмитриев</p>
+                <p class="github-card__author-email">anton@yandex.ru</p>
+              </div>
             </div>
+            <p class="github-card__content">Emmet (formerly Zen Coding) is a web-
+              developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
           </div>
-          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
-            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-        </div>
-        <div class="swiper-slide github__card">
-          <p class="github__card-date">14 августа, 2019</p>
-          <div class="github__card-author">
-            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="аватар" class="github__card-author-image">
-            <div class="github__card__author-contacts">
-              <p class="github__author-name">Антон Дмитриев</p>
-              <p class="github__author-email">anton@yandex.ru</p>
-            </div>
-          </div>
-          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
-            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-        </div>
-
-        <div class="swiper-slide github__card">
-          <p class="github__card-date">14 августа, 2019</p>
-          <div class="github__card-author">
-            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="аватар" class="github__card-author-image">
-            <div class="github__card__author-contacts">
-              <p class="github__author-name">Антон Дмитриев</p>
-              <p class="github__author-email">anton@yandex.ru</p>
-            </div>
-          </div>
-          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
-            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-        </div>
-
-        <div class="swiper-slide github__card">
-          <p class="github__card-date">14 августа, 2019</p>
-          <div class="github__card-author">
-            <img src="<%=require('../../images/github-person-64-64.jpg')%>" alt="аватар" class="github__card-author-image">
-            <div class="github__card__author-contacts">
-              <p class="github__author-name">Антон Дмитриев</p>
-              <p class="github__author-email">anton@yandex.ru</p>
-            </div>
-          </div>
-          <p class="github__card-content">Emmet (formerly Zen Coding) is a web-
-            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-        </div>
-
+        </template>
       </div>
       <div class="container">
         <div class="swiper__pagination"></div>
-        <button class="button button_theme_default swiper__button">Открыть в GitHub</button>
+        <button class="button button_theme_default swiper__button github__button">Открыть в GitHub</button>
       </div>
     </div>
     <div class="swiper__button-next"></div>

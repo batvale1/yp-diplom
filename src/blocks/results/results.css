@@ -3,6 +3,7 @@
 @import "./__more-btn/results__more-btn.css";
 @import "./__cards/results__cards.css";
 @import "./__link/results__link.css";
+@import "./_hidden/results_hidden.css";
 
 .results {
     font-family: Roboto, Arial, Helvetica, sans-serif;

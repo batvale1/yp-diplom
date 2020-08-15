@@ -10,6 +10,7 @@
 @import "./__value-number/analytics__value-number.css";
 @import "./__multi-rows-title/analytics__multi-rows-title.css";
 @import "./__row-data/analytics__row-data.css";
+@import "./_hidden/analytics_hidden.css";
 
 .analytics {
     font-family: Roboto, Arial, Helvetica, sans-serif;
